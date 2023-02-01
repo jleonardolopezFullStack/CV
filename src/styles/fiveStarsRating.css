@@ -1,0 +1,42 @@
+li.starListItem {
+  display: inline;
+  position: relative;
+  top: -10px;
+  right: 10px;
+}
+
+.star_rating {
+  width: 150px;
+  height: 80px;
+  background-color: #0546e0;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  border-radius: 30px;
+  background-image: repeating-linear-gradient(
+    to left,
+    #0546e0,
+    #1172f9,
+    #4892f9
+  );
+  box-shadow: -1px 1px 1px 1px #fff;
+}
+
+.yellowStar {
+  fill: yellow;
+  border-radius: 50px;
+}
+.textRating {
+  font-size: 13px;
+  margin: 10px;
+  text-shadow: 1px 1px 1px #919191, 1px 1px 1px #919191, 1px 2px 1px #919191;
+}
+.ratingButton {
+  border-radius: 50px;
+  height: 20px;
+  font-size: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  top: -25px;
+}

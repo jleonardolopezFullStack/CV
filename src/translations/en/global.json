@@ -1,0 +1,10 @@
+{
+  "header": {
+    "about": "About me...",
+    "skills": "Skills...",
+    "info": "Info",
+    "experience": "Experience...",
+    "education": "Education...",
+    "aboutExperience": "I am a Full Stack Engineer, passionate about technology, IoT and Blockchain. Skilled in JavaScript with ReactJS, ExpressJS, NodeJS and looking to learn Blockchain language like Solidity, Rust or Haskell."
+  }
+}

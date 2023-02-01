@@ -1,0 +1,10 @@
+{
+  "header": {
+    "about": "Acerca de mi...",
+    "skills": "Habilidades...",
+    "info": "Info",
+    "experience": "Experiencia...",
+    "education": "Educacion...",
+    "aboutExperience": "Soy Ingeniero Full Stack, amante de la tecnologia, IoT y Blockchain. Mis habilidades se centran en Javascript en el Stack MERN, con curiosidad de expander mis conocimientos a lenguages de Blockchain como Solidity o Rust."
+  }
+}

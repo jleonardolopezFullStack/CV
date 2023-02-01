@@ -1,0 +1,32 @@
+.container_link {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: blueviolet;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .github {
+  position: absolute;
+  top: 75%;
+  right: 53%;
+  z-index: 0;
+  border: 10px solid red;
+}
+
+.linkedin {
+  position: absolute;
+  top: 75%;
+  right: 49%;
+  z-index: 0;
+}
+
+.whatsapp {
+  position: absolute;
+  top: 75%;
+  right: 45%;
+  z-index: 0;
+} */

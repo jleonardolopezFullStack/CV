@@ -1,10 +1,13 @@
 {
   "header": {
-    "about": "Acerca de mi...",
+    "about": "Acerca de Mí...",
     "skills": "Habilidades...",
-    "info": "Info",
+    "info": "Contáctame",
+    "bot": "Intenta con me Whatsapp LeoBot🤖",
     "experience": "Experiencia...",
-    "education": "Educacion...",
-    "aboutExperience": "Soy Ingeniero Full Stack, amante de la tecnologia, IoT y Blockchain. Mis habilidades se centran en Javascript en el Stack MERN, con curiosidad de expander mis conocimientos a lenguages de Blockchain como Solidity o Rust."
+    "education": "Educación...",
+    "aboutText": "Soy Ingeniero Full Stack, amante de la tecnologia, IoT y Blockchain. Mis habilidades se centran en Javascript en el Stack MERN, con curiosidad de expander mis conocimientos a lenguages de Blockchain como Solidity o Rust.",
+    "experienceText": "En este increíble viaje, he logrado crear API Rest de informacion en juegos, plataforma de redes sociales conectadas por Sockets, plataforma de Ecommerce y formato de programación SVG, administrando siempre un sistema de control de versiones y guardando en bases de datos SQL y NoSQL. Los invito a inspeccionar a algunos de esos proyectos en mi GitHub.",
+    "educationText": "Felizmente orgulloso: \n🎉Full Stack MERN - Autodidacta \n✨Diploma en Información Tecnológica - Well International College \n🎊Ingeniero de Alimentos - Universidad Jorge Tadeo Lozano"
   }
 }

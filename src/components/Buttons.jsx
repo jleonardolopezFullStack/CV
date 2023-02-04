@@ -1,7 +1,7 @@
 import { useButtonStore, useInfoStore } from "../store/ButtonStore";
 import { useProgressStore } from "../store/ProgressBarStore";
 import { shallow } from "zustand/shallow";
-import { Plug1, Plug2, Plug3, Plug4 } from "./Conection";
+import { Plug1, Plug2, Plug4 } from "./Conection";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -29,7 +29,6 @@ export const ButtonsAbout = () => {
 
   return (
     <div>
-      <Plug1 />
       <button
         className="button about_button"
         //onMouseEnter={hanldeStateAbout(1)}
@@ -67,7 +66,6 @@ export const ButtonSkills = () => {
   };
   return (
     <div>
-      <Plug2 />
       <button
         className="button skill_button"
         onMouseEnter={() => {
@@ -119,7 +117,6 @@ export const ButtonBall = () => {
       >
         {t("header.info")}
       </button>
-      <Plug3 />
     </div>
   );
 };
@@ -156,7 +153,6 @@ export const ButtonExperience = () => {
       >
         {t("header.experience")}
       </button>
-      <Plug4 />
     </div>
   );
 };
@@ -167,16 +163,24 @@ export const ButtonEducation = () => {
   const { stateProgressList } = useProgressStore((state) => ({
     stateProgressList: state.stateProgressList,
   }));
-
+  const { hanldeStateEducationTrue, hanldeStateEducationFalse } =
+    useButtonStore();
   const { hanldeStateProgress, hanldeStateProgressList } = useProgressStore();
   const varias = (word) => {
     hanldeStateProgress(20);
     hanldeStateProgressList(word);
   };
+
   return (
     <div>
       <button
         className="button education_button"
+        onMouseEnter={() => {
+          hanldeStateEducationTrue();
+        }}
+        onMouseLeave={() => {
+          hanldeStateEducationFalse();
+        }}
         onClick={() => {
           stateProgressList.includes("education")
             ? console.log("already is add")

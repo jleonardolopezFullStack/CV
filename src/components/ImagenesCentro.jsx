@@ -4,13 +4,13 @@ import { useTranslation } from "react-i18next";
 
 const ImagenesCentro = () => {
   const [t, i18n] = useTranslation("global");
-  const { stateAbout, stateSkill, stateExperience } = useButtonStore(
-    (state) => ({
+  const { stateAbout, stateSkill, stateExperience, stateEducation } =
+    useButtonStore((state) => ({
       stateAbout: state.stateAbout,
       stateSkill: state.stateSkill,
       stateExperience: state.stateExperience,
-    })
-  );
+      stateEducation: state.stateEducation,
+    }));
   const { stateInfo } = useInfoStore((state) => ({
     stateInfo: state.stateInfo,
   }));
@@ -18,13 +18,17 @@ const ImagenesCentro = () => {
     <>
       {/*       <h1 className="name_title">Jorge Lopez</h1>
        */}
-      <span className="text">Jorge López</span>
-      <span className="text_mern">Full Stack Engineer | MERN</span>
-      <hr className="hr" />
+
       <div
         className="img"
         style={
-          !(stateAbout || stateSkill || stateInfo || stateExperience)
+          !(
+            stateAbout ||
+            stateSkill ||
+            stateInfo ||
+            stateExperience ||
+            stateEducation
+          )
             ? { opacity: "1" }
             : { opacity: "0.1" }
         }
@@ -37,7 +41,7 @@ const ImagenesCentro = () => {
           Full Stack Engineer | Mongo | Express | React | Node | TypeScript |
           MERN
         </p>
-        <p>{t("header.aboutExperience")}</p>
+        <p>{t("header.aboutText")}</p>
       </div>
       <div
         className="imgSkills"
@@ -49,7 +53,7 @@ const ImagenesCentro = () => {
       >
         <div className="phone">
           <div className="phone_img"></div>
-          <p className="phone_text">041565709</p>
+          <p className="phone_text">{t("header.bot")}</p>
         </div>
 
         <div className="address">
@@ -58,24 +62,19 @@ const ImagenesCentro = () => {
         </div>
         <div className="email">
           <div className="email_img"></div>
-          <p className="email_text">Jleo@hot.com</p>
+          <p className="email_text">Jleonardolopez@hotmail.com</p>
         </div>
       </div>
       <div
         className="textExperience"
         style={!stateExperience ? { opacity: "0" } : { opacity: "1" }}
       >
-        <p>
-          In this amazing journal I have created API's gaming , social media
-          with Sockets, E commerce platform, and even SVG programming format,
-          driving a version system and the best part you can chek it out in my
-          GitHub.
-        </p>
+        <p>{t("header.experienceText")}</p>
       </div>
       <div className="img_back">
         <svg
           width="460"
-          height="377"
+          height="360"
           viewBox="0 0 352 227"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +88,12 @@ const ImagenesCentro = () => {
             fill="#068DD1"
           />
         </svg>
+      </div>
+      <div
+        className="textEducation"
+        style={!stateEducation ? { opacity: "0" } : { opacity: "1" }}
+      >
+        <p>{t("header.educationText").replace(/\n/g, "<br />")}</p>
       </div>
     </>
   );

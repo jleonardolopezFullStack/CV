@@ -38,12 +38,12 @@ export const useButtonStore = create((set, get) => ({
   },
   hanldeStateEducationTrue: (value) => {
     set((state) => ({
-      stateSkill: true,
+      stateEducation: true,
     }));
   },
   hanldeStateEducationFalse: (value) => {
     set((state) => ({
-      stateAbout: false,
+      stateEducation: false,
     }));
   },
 }));

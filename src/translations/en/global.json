@@ -2,9 +2,12 @@
   "header": {
     "about": "About me...",
     "skills": "Skills...",
-    "info": "Info",
+    "info": "Contact",
+    "bot": "Let's try my Whatsapp LeoBot🤖",
     "experience": "Experience...",
     "education": "Education...",
-    "aboutExperience": "I am a Full Stack Engineer, passionate about technology, IoT and Blockchain. Skilled in JavaScript with ReactJS, ExpressJS, NodeJS and looking to learn Blockchain language like Solidity, Rust or Haskell."
+    "aboutText": "I am Full Stack Engineer, passionate about technology, IoT and Blockchain. Skilled in JavaScript with ReactJS, ExpressJS, NodeJS and looking to learn Blockchain language like Solidity, Rust or Haskell.",
+    "experienceText": "In this incredible journey, I have created API Rest information games, socketed social networking platform, E-commerce platform and SVG programming format, managed a versioning system and saved to SQL and NoSQL databases. I invite you to enjoy inspecting some of those projects on my GitHub.",
+    "educationText": "Happily proud: \n🎉Full Stack MERN - Self-taught \n✨Information Technology Diploma - Well International College \n🎊Food Engineer - Jorge Tadeo Lozano University"
   }
 }

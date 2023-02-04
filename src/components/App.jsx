@@ -11,20 +11,35 @@ import {
 import { Links } from "./Links";
 import ProgressBar2 from "./ProgressBar2";
 import { FiveStarsRating } from "./FiveStarsRating";
+import Title from "./Title";
+import "../styles/title.css";
 
 const App = () => {
   return (
-    <div className="divApp">
-      <ImagenesCentro />
-      <ButtonsAbout />
-      <ButtonSkills />
-      <ButtonBall />
-      <ButtonExperience />
-      <ButtonEducation />
+    <div>
       <ButtonsLanguages />
+      <Title />
+
+      <div className="divApp">
+        <div className="right">
+          <ButtonsAbout />
+          <ButtonBall />
+          <ButtonSkills />
+        </div>
+        <div className="center">
+          <ImagenesCentro />
+        </div>
+        <div className="left">
+          <ButtonExperience />
+          <ButtonEducation />
+        </div>
+      </div>
+
       <Links />
-      <ProgressBar2 />
-      <FiveStarsRating />
+      <div className="feedback">
+        <ProgressBar2 />
+        <FiveStarsRating />
+      </div>
     </div>
   );
 };

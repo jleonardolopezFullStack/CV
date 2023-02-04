@@ -1,0 +1,61 @@
+.title {
+  background-color: burlywood;
+  width: 300px;
+  height: 100px;
+}
+
+.name_title {
+  font-family: "Arizonia", cursive;
+  font-size: 80px;
+  font-weight: 400;
+  border: 1px solid #09f;
+  position: absolute;
+  top: 5%;
+  left: 34%;
+  rotate: -5deg;
+  z-index: 4;
+  box-shadow: -1px 1px 2px 2px #fff;
+}
+.text {
+  position: absolute;
+  top: 7%;
+  right: 35%;
+  width: 500px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+  z-index: 10;
+}
+.text_mern {
+  position: absolute;
+  top: 19%;
+  right: 35%;
+  width: 300px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 2px 25px rgba(16, 16, 16, 0.4),
+    1px 5px 50px rgba(16, 16, 16, 0.2);
+  z-index: 10;
+}
+.hr {
+  position: absolute;
+  top: 20%;
+  right: 36%;
+  width: 300px;
+  border-width: 4px;
+  border-color: #092c3e;
+  border-radius: 20px;
+  z-index: 10;
+}
